@@ -11,5 +11,10 @@ namespace GameFinder.WebAPI.Controllers
     [ApiController]
     public class GenreController : ControllerBase
     {
+        private readonly IGenreService _service;
+        public GenreController(IGenreService service)
+        {
+            _service = service;
+        }
     }
 }
