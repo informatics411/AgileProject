@@ -4,16 +4,24 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Blake -->
-    <!-- <UserSecretsId>0825d04e-2998-45a1-8113-565fda624a72</UserSecretsId> -->
+    <UserSecretsId>0825d04e-2998-45a1-8113-565fda624a72</UserSecretsId>
     <!-- Kali -->
     <!-- <UserSecretsId>eef1862e-f55c-45e6-8de9-b77e98dcd8d6</UserSecretsId> -->
     <!-- mike -->
-    <UserSecretsId>090a097b-234c-4444-88e7-9b59aecacbd6</UserSecretsId>
+    <!-- <UserSecretsId>090a097b-234c-4444-88e7-9b59aecacbd6</UserSecretsId> -->
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
