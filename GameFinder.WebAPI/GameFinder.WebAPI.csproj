@@ -1,9 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Blake -->
+    <!-- <UserSecretsId>0825d04e-2998-45a1-8113-565fda624a72</UserSecretsId> -->
   </PropertyGroup>
 
   <ItemGroup>
