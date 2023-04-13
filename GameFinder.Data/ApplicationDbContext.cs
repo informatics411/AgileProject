@@ -10,4 +10,6 @@ public class ApplicationDbContext : DbContext
         {
             
         }
+
+        public DbSet<GameSystemEntity> GameSystems { get; set; }
     }
