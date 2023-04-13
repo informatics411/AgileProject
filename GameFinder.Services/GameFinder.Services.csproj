@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GameFinder.Models\GameFinder.Models.csproj" />
-    <ProjectReference Include="GameFinder.Services.csproj" />
+    <ProjectReference Include="..\GameFinder.Data\GameFinder.Data.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
