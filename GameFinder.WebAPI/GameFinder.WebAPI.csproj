@@ -6,6 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- mike -->
     <!-- <UserSecretsId>090a097b-234c-4444-88e7-9b59aecacbd6</UserSecretsId> -->
+    <!-- Blake -->
+    <!-- <UserSecretsId>0825d04e-2998-45a1-8113-565fda624a72</UserSecretsId> -->
   </PropertyGroup>
 
   <ItemGroup>
