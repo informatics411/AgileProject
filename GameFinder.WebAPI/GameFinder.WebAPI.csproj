@@ -1,10 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <!-- Kali -->
+    <!-- Blake -->
+    <!-- <UserSecretsId>0825d04e-2998-45a1-8113-565fda624a72</UserSecretsId> -->
+     <!-- Kali -->
     <!-- <UserSecretsId>eef1862e-f55c-45e6-8de9-b77e98dcd8d6</UserSecretsId> -->
   </PropertyGroup>
 
@@ -19,5 +20,4 @@
     <ProjectReference Include="..\GameFinder.Models\GameFinder.Models.csproj" />
     <ProjectReference Include="..\GameFinder.Services\GameFinder.Services.csproj" />
   </ItemGroup>
-
 </Project>
