@@ -4,7 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>eef1862e-f55c-45e6-8de9-b77e98dcd8d6</UserSecretsId>
+    <!-- Kali -->
+    <!-- <UserSecretsId>eef1862e-f55c-45e6-8de9-b77e98dcd8d6</UserSecretsId> -->
   </PropertyGroup>
 
   <ItemGroup>
