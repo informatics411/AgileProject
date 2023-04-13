@@ -11,6 +11,9 @@ builder.Services.AddSwaggerGen();
     builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 
+//Add Genre Service/Interface for Dependency Injection here
+builder.Services.AddScoped<IGenreService, GenreService>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
