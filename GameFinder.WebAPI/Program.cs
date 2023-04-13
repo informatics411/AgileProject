@@ -10,11 +10,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
     builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
-builder.Services.AddScoped<IGameSystemService, GameSystemService>();
-
-
 //Add Genre Service/Interface for Dependency Injection here
 builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<IGameSystemService, GameSystemService>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
