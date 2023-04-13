@@ -13,6 +13,9 @@ var app = builder.Build();
 builder.Services.AddScoped<IGameSystemService, GameSystemService>();
 
 
+//Add Genre Service/Interface for Dependency Injection here
+builder.Services.AddScoped<IGenreService, GenreService>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
