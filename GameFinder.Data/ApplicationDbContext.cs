@@ -10,4 +10,7 @@ public class ApplicationDbContext : DbContext
         {
             
         }
+
+        public DbSet<GameSystemEntity> GameSystems { get; set; }
+        public DbSet<GenreEntity> Genres { get; set; }
     }
