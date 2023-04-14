@@ -14,7 +14,7 @@ public class GameSystemController : ControllerBase
         _Service = service;
     }
 
-    [HttpPost]
+    [HttpPost("Register")]
     public async Task<IActionResult> RegisterGameSystem([FromBody] GameSystemRegister model)
     {
         if (!ModelState.IsValid)
