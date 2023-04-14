@@ -16,7 +16,7 @@ public class GenreController : ControllerBase
         _service = service;
     }
 
-[HttpPost]
+[HttpPost("Register")]
 public async Task<IActionResult> RegisterGenre([FromBody] GenreRegister model)
 {
     if (!ModelState.IsValid)
@@ -30,4 +30,7 @@ public async Task<IActionResult> RegisterGenre([FromBody] GenreRegister model)
     }
     return BadRequest("Genre could not be registered.");
 }
+
+[HttpPost("Update")]
+
 }
