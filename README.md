@@ -1,6 +1,7 @@
 # AgileProject
 
-Game Finder App                             DOCUMENT VERSION 2.1
+                                                                        DOCUMENT VERSION 2.3b
+Game Finder App
 Minimal Viable Project: 
 An application that allows the user to add, delete, and update games in a game database. Users will be able search game titles by name, Game System, and genre. Est. 20 work-hrs.
 
@@ -67,5 +68,22 @@ As a gamer, I want to see a ListOfAllGames
 As a gamer, I want to see a ListOfAllGameSystems
 As a gamer, I want to see a ListOfAllGenres
 
-                                                DOCUMENT VERSION 2.1
 
+Order of Operation:
+AddGameSystem
+UpdateGameSystem
+No DeleteGameSystem
+AddGenre
+UpdateGenre
+No DeleteGenre
+AddGame
+RemoveGame
+UpdateGame
+SearchGameByTitle
+SearchGameByGameSystem
+SearchGameByGenre
+
+Trello Link:
+https://trello.com/invite/b/WEiCOmFn/ATTI8620475d97574228be4b696d760ed45b88AB4858/agile-project
+                                                                        
+                                                                         DOCUMENT VERSION 2.3b
