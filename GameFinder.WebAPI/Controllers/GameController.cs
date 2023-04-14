@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-ApiController]
+    [ApiController]
     [Route("api/[controller]")]
     public class GameController : ControllerBase
     {
-         private readonly IGameService _service;
+    private readonly IGameService _service;
     public GameController(IGameService service)
     {
         _service = service;
@@ -28,4 +28,16 @@ ApiController]
         }
         return BadRequest("Game could not be registered.");
     }
+
+    [HttpGet("GetGame")]
+  public async Task<IActionResult> GetByName ([FromBody] string name)
+  {
+    var gameDetail = await _service.GetGameDetailAsync(name);
+    if (gameDetail == null)
+    {
+        return NotFound();
+    }
+    return Ok(gameDetail);
+  }
+
     }
