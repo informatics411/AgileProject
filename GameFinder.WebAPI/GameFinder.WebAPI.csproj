@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
@@ -6,9 +6,9 @@
     <!-- Blake -->
     <!-- <UserSecretsId>0825d04e-2998-45a1-8113-565fda624a72</UserSecretsId> -->
     <!-- Kali -->
-    <!-- <UserSecretsId>eef1862e-f55c-45e6-8de9-b77e98dcd8d6</UserSecretsId> -->
+    <UserSecretsId>eef1862e-f55c-45e6-8de9-b77e98dcd8d6</UserSecretsId>
     <!-- mike -->
-    <UserSecretsId>090a097b-234c-4444-88e7-9b59aecacbd6</UserSecretsId>
+    <!-- <UserSecretsId>090a097b-234c-4444-88e7-9b59aecacbd6</UserSecretsId> -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,6 +22,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
