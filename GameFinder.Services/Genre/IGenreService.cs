@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 public interface IGenreService
 {
-
+    Task<bool> RegisterGenreAsync(GenreRegister model);
 }

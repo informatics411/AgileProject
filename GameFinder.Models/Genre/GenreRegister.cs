@@ -6,6 +6,5 @@ using System.Threading.Tasks;
 
 public class GenreRegister
 {
-    public string Name { get; set;}
-
+    public string Name { get; set; }
 }
