@@ -13,4 +13,21 @@ public class GameSystemController : ControllerBase
     {
         _Service = service;
     }
+
+    [HttpPost]
+    public async Task<IActionResult> RegisterGameSystem([FromBody] GameSystemRegister model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        var registerResult = await _Service.RegisterGameSystemAsync(model);
+        if (registerResult)
+        {
+            return Ok("Game System was registered");
+        }
+
+        return BadRequest("Game system could not be registered");
+    }
 }
