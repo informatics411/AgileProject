@@ -16,21 +16,18 @@ public class GenreController : ControllerBase
         _service = service;
     }
 
-[HttpPost("Register")]
-public async Task<IActionResult> RegisterGenre([FromBody] GenreRegister model)
-{
-    if (!ModelState.IsValid)
+    [HttpPost("Register")]
+    public async Task<IActionResult> RegisterGenre([FromBody] GenreRegister model)
     {
-        return BadRequest(ModelState);
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+        var registerResult = await _service.RegisterGenreAsync(model);
+        if (registerResult)
+        {
+            return Ok("Genre was registered.");
+        }
+        return BadRequest("Genre could not be registered.");
     }
-    var registerResult = await _service.RegisterGenreAsync(model);
-    if (registerResult)
-    {
-        return Ok("Genre was registered.");
-    }
-    return BadRequest("Genre could not be registered.");
-}
-
-[HttpPost("Update")]
-
 }
