@@ -4,8 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-
-public interface IGenreService
+public class GenreRegister
 {
-    Task<bool> RegisterGenreAsync(GenreRegister model);
+    public string Name { get; set; }
 }

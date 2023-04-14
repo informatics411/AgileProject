@@ -5,11 +5,32 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GameFinder.WebAPI.Controllers
+
+[Route("api/[controller]")]
+[ApiController]
+public class GenreController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class GenreController : ControllerBase
+    private readonly IGenreService _service;
+    public GenreController(IGenreService service)
     {
+        _service = service;
     }
+
+[HttpPost("Register")]
+public async Task<IActionResult> RegisterGenre([FromBody] GenreRegister model)
+{
+    if (!ModelState.IsValid)
+    {
+        return BadRequest(ModelState);
+    }
+    var registerResult = await _service.RegisterGenreAsync(model);
+    if (registerResult)
+    {
+        return Ok("Genre was registered.");
+    }
+    return BadRequest("Genre could not be registered.");
+}
+
+[HttpPost("Update")]
+
 }

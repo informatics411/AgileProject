@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-
-
-public interface IGenreService
+namespace GameFinder.Models.Genre
 {
-    Task<bool> RegisterGenreAsync(GenreRegister model);
+    public class GenreUpdate
+    {
+        
+    }
 }
